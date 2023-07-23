@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "id": "betterweather",
+  "version": "${version}",
+  "name": "BetterWeather",
+  "description": "",
+  "authors": [
+    "ThatError404"
+  ],
+  "contact": {
+    "repo": "https://github.com/ThatError404/BetterWeather"
+  },
+  "license": "All-Rights-Reserved",
+  "icon": "assets/betterweather/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "org.thaterror404.betterweather.client.BetterWeatherClient"
+    ],
+    "main": [
+      "org.thaterror404.betterweather.BetterWeather"
+    ]
+  },
+  "mixins": [
+    "betterweather.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
